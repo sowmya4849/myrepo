@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [HMS Login]">
+  <parameter name="uname" value="admin"/>
+  <parameter name="pwd" value="admin"/>
+  <test name="Login1 user(failed)">
+    <parameter name="uname" value="mahesh"/>
+    <parameter name="pwd" value="mahesh"/>
+    <classes>
+      <class name="TestNG.Login_DP_xml">
+        <methods>
+          <include name="login" invocation-numbers="0"/>
+          <include name="beforeTest"/>
+          <include name="beforeTest"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- TestNG.Login_DP_xml -->
+    </classes>
+  </test> <!-- Login1 user(failed) -->
+</suite> <!-- Failed suite [HMS Login] -->

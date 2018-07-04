@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="87809" started-at="2018-06-05T15:49:24Z" finished-at="2018-06-05T15:50:52Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="87809" started-at="2018-06-05T15:49:24Z" finished-at="2018-06-05T15:50:52Z">
+      <class name="Ajax">
+        <test-method status="PASS" signature="beforetest()[pri:0, instance:Ajax@39aeed2f]" name="beforetest" is-config="true" duration-ms="16334" started-at="2018-06-05T21:19:24Z" finished-at="2018-06-05T21:19:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforetest -->
+        <test-method status="PASS" signature="f()[pri:0, instance:Ajax@39aeed2f]" name="f" duration-ms="71439" started-at="2018-06-05T21:19:41Z" finished-at="2018-06-05T21:20:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+      </class> <!-- Ajax -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

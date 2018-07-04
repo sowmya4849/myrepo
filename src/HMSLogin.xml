@@ -1,0 +1,23 @@
+<suite name="HMS Login">
+<test name="Login user">
+<parameter name="uname" value="user1"></parameter>
+<parameter name="pwd" value="user1"></parameter>
+<classes>
+<class name="TestNG.Login_DP_xml"></class>
+</classes>
+</test>
+<test name="Login1 user">
+<parameter name="uname" value="mahesh"></parameter>
+<parameter name="pwd" value="mahesh"></parameter>
+<classes>
+<class name="TestNG.Login_DP_xml"></class>
+</classes>
+</test>
+<test name="Login2 user">
+<parameter name="uname" value="admin"></parameter>
+<parameter name="pwd" value="admin"></parameter>
+<classes>
+<class name="TestNG.Login_DP_xml"></class>
+</classes>
+</test>
+</suite>
