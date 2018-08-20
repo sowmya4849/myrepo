@@ -22,7 +22,7 @@ public class JqueryResizeable {
 				WebElement e2=	driver.findElement(By.xpath("(//*[@class='ui-resizable-handle ui-resizable-s']/following::*)"));
 				a.dragAndDropBy(e2, 100,20).build().perform();
 				//or 
-			//	a.clickAndHold(e2).moveByOffset(100, 30).build().perform();
+			//	a.clickAndHold(e2).moveByOffset(100, 30).release().build().perform();
 	}
 
 }

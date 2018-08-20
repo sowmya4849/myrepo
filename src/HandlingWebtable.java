@@ -27,7 +27,8 @@ public class HandlingWebtable {
   }
   @BeforeTest
   public void beforetest() {
-	  driver=new FirefoxDriver();
+	   System.setProperty("webdriver.gecko.driver", "E:\\mindq\\geckodriver.exe");
+	     driver=new FirefoxDriver();
 	  driver.get("http://www.spicejet.com");
 	  driver.manage().window().maximize();
   }

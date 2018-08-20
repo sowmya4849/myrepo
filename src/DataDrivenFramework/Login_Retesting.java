@@ -7,12 +7,10 @@ package DataDrivenFramework;
 
 	import org.openqa.selenium.By;
 	import org.openqa.selenium.WebDriver;
-	import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 	import org.testng.annotations.BeforeTest;
 	import org.testng.annotations.Test;
-
-	import com.thoughtworks.selenium.Selenium;
-	import com.thoughtworks.selenium.webdriven.WebDriverBackedSelenium;
 
 	import jxl.Sheet;
 	import jxl.Workbook;
@@ -20,7 +18,7 @@ package DataDrivenFramework;
 	public class Login_Retesting {
 
 		public WebDriver driver;
-		public Selenium selenium;
+		//public Selenium selenium;
 		public FileInputStream fi;
 		public Workbook w;
 		public Sheet s;
@@ -53,6 +51,7 @@ package DataDrivenFramework;
 
 				} catch (Exception e) {
 					System.out.println("Invalid Credential");
+					driver.switchTo().alert().accept();
 				}
 
 			}
@@ -60,9 +59,12 @@ package DataDrivenFramework;
 
 		@BeforeTest
 		public void beforeTest() {
-			driver = new FirefoxDriver();
+			System.setProperty("webdriver.chrome.driver", "E://mindq//chromedriver.exe");
+			driver = new ChromeDriver();
+			
+		//	driver = new FirefoxDriver();
 			driver.get("http://www.seleniumbymahesh.com/HMS");
-			selenium = new WebDriverBackedSelenium(driver, "http://www.seleniumbymahesh.com/HMS");
+		//	selenium = new WebDriverBackedSelenium(driver, "http://www.seleniumbymahesh.com/HMS");
 			driver.manage().window().maximize();
 		}
 

@@ -27,7 +27,8 @@ public class Login_DP_xml {
  
   @BeforeTest
   public void beforeTest() {
-	  driver=new FirefoxDriver();
+	  System.setProperty("webdriver.gecko.driver", "‪E:\\Selenium\\geckodriver.exe");
+		 driver=new FirefoxDriver();
 	  driver.get("http://seleniumbymahesh.com/HMS");
 	  driver.manage().window().maximize();
   }

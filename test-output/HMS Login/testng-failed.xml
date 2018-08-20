@@ -3,13 +3,27 @@
 <suite name="Failed suite [HMS Login]">
   <parameter name="uname" value="admin"/>
   <parameter name="pwd" value="admin"/>
+  <test name="Login user(failed)">
+    <parameter name="uname" value="user1"/>
+    <parameter name="pwd" value="user1"/>
+    <classes>
+      <class name="TestNG.Login_DP_xml">
+        <methods>
+          <include name="login"/>
+          <include name="beforeTest"/>
+          <include name="beforeTest"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- TestNG.Login_DP_xml -->
+    </classes>
+  </test> <!-- Login user(failed) -->
   <test name="Login1 user(failed)">
     <parameter name="uname" value="mahesh"/>
     <parameter name="pwd" value="mahesh"/>
     <classes>
       <class name="TestNG.Login_DP_xml">
         <methods>
-          <include name="login" invocation-numbers="0"/>
+          <include name="login"/>
           <include name="beforeTest"/>
           <include name="beforeTest"/>
           <include name="beforeTest"/>
@@ -17,4 +31,18 @@
       </class> <!-- TestNG.Login_DP_xml -->
     </classes>
   </test> <!-- Login1 user(failed) -->
+  <test name="Login2 user(failed)">
+    <parameter name="uname" value="admin"/>
+    <parameter name="pwd" value="admin"/>
+    <classes>
+      <class name="TestNG.Login_DP_xml">
+        <methods>
+          <include name="login"/>
+          <include name="beforeTest"/>
+          <include name="beforeTest"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- TestNG.Login_DP_xml -->
+    </classes>
+  </test> <!-- Login2 user(failed) -->
 </suite> <!-- Failed suite [HMS Login] -->

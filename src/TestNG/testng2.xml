@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests">
+
+  <test name=" firefox Test">
+      <parameter name="browser" value="firefox"></parameter>
+    <classes>
+      <class name="com.automation.ecommerce.homePage.grid_ex"></class>
+    </classes>
+  </test> 
+  <test name="chrome Test">
+      <parameter name="browser" value="chrome"></parameter>
+  
+    <classes>
+      <class name="com.automation.ecommerce.homePage.grid_ex"/>
+    </classes>
+  </test> 
+  <test name="ie Test">
+      <parameter name="browser" value="ie"></parameter>
+    <classes>
+      <class name="com.automation.ecommerce.homePage.grid_ex"/>
+    </classes>
+  </test> 
+  <!-- Test -->
+</suite> <!-- Suite -->

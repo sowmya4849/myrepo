@@ -6,7 +6,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.Select;
 
-import com.thoughtworks.selenium.webdriven.commands.GetText;
 
 public class spicejet {
 

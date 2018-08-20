@@ -1,21 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="1" failed="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="87809" started-at="2018-06-05T15:49:24Z" finished-at="2018-06-05T15:50:52Z">
+  <suite name="Suite" duration-ms="47" started-at="2018-08-20T05:25:04Z" finished-at="2018-08-20T05:25:04Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="87809" started-at="2018-06-05T15:49:24Z" finished-at="2018-06-05T15:50:52Z">
-      <class name="Ajax">
-        <test-method status="PASS" signature="beforetest()[pri:0, instance:Ajax@39aeed2f]" name="beforetest" is-config="true" duration-ms="16334" started-at="2018-06-05T21:19:24Z" finished-at="2018-06-05T21:19:41Z">
+    <test name="Default test" duration-ms="47" started-at="2018-08-20T05:25:04Z" finished-at="2018-08-20T05:25:04Z">
+      <class name="TestNG.grid_ex">
+        <test-method status="SKIP" signature="mailTest(java.lang.String)[pri:0, instance:TestNG.grid_ex@6767c1fc]" name="mailTest" duration-ms="0" started-at="2018-08-20T10:55:04Z" finished-at="2018-08-20T10:55:04Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'browser' is required by @Test on method mailTest but has not been marked @Optional or defined
+in C:\Users\DELL\AppData\Local\Temp\testng-eclipse--730919193\testng-customsuite.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'browser' is required by @Test on method mailTest but has not been marked @Optional or defined
+in C:\Users\DELL\AppData\Local\Temp\testng-eclipse--730919193\testng-customsuite.xml
+	at org.testng.internal.Parameters.createParameters(Parameters.java:154)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:361)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:451)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1270)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:985)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1075)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:393)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforetest -->
-        <test-method status="PASS" signature="f()[pri:0, instance:Ajax@39aeed2f]" name="f" duration-ms="71439" started-at="2018-06-05T21:19:41Z" finished-at="2018-06-05T21:20:52Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- f -->
-      </class> <!-- Ajax -->
+        </test-method> <!-- mailTest -->
+      </class> <!-- TestNG.grid_ex -->
     </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+  </suite> <!-- Suite -->
 </testng-results>

@@ -36,7 +36,7 @@ public class fb_login_Friendslist {
 	
 		WebDriverWait wait = new WebDriverWait(driver, 20);
 
-		wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("//*[@data-tab-key='friends']"))));
+	//	wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("//*[@data-tab-key='friends']"))));
 
 		driver.findElement(By.xpath("//*[@data-tab-key='friends']")).click();
   
